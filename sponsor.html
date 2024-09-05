@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Plan B site</title>
+</head>
+
+<body>
+  <style>
+    :root {
+      --background: 0 0% 100%;
+      --foreground: 240 10% 3.9%;
+      --card: 0 0% 100%;
+      --card-foreground: 240 10% 3.9%;
+      --popover: 0 0% 100%;
+      --popover-foreground: 240 10% 3.9%;
+      --primary: 240 5.9% 10%;
+      --primary-foreground: 0 0% 98%;
+      --secondary: 240 4.8% 95.9%;
+      --secondary-foreground: 240 5.9% 10%;
+      --muted: 240 4.8% 95.9%;
+      --muted-foreground: 240 3.8% 45%;
+      --accent: 240 4.8% 95.9%;
+      --accent-foreground: 240 5.9% 10%;
+      --destructive: 0 72% 51%;
+      --destructive-foreground: 0 0% 98%;
+      --border: 240 5.9% 90%;
+      --input: 240 5.9% 90%;
+      --ring: 240 5.9% 10%;
+      --chart-1: 173 58% 39%;
+      --chart-2: 12 76% 61%;
+      --chart-3: 197 37% 24%;
+      --chart-4: 43 74% 66%;
+      --chart-5: 27 87% 67%;
+      --radius: 0.5rem;
+    }
+
+    img[src="/placeholder.svg"],
+    img[src="/placeholder-user.jpg"] {
+      filter: sepia(.3) hue-rotate(-60deg) saturate(.5) opacity(0.8)
+    }
+  </style>
+  <style>
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: 'Inter', sans-serif;
+      --font-sans-serif: 'Inter';
+    }
+  </style>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      --font-sans-serif: 'Inter';
+    }
+    .apply {
+      transition: 200ms;
+      &:active {
+        transform: scale(0.95);
+      }
+    }
+  </style>
+  <div class="dark bg-background text-foreground">
+    <header class="w-full border-b border-border">
+      <div class="container flex h-16 items-center justify-between px-4 md:px-6">
+        <a class="flex items-center gap-2" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
+            <path d="m8 3 4 8 5-5 5 15H2L8 3z"></path>
+          </svg>
+          <a href="index.html"><span class="font-bold">Plan B Summer Bootcamp</span>
+        </a>
+        <nav class="hidden space-x-4 md:flex">
+          <a class="text-sm font-medium hover:underline" href="about.html">
+            about
+          </a>
+          <a class="text-sm font-medium hover:underline" href="tel:+2349018857324">
+            Contact
+          </a>
+
+          <a class="text-sm font-medium hover:underline" href="mailto:144planb@gmail.com">
+            Mail
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="w-full bg-muted py-12 md:py-24 lg:py-32">
+        <img src="minister2.JPG" width="800" height="600" alt="Hero Image"
+        class="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full" />
+      <div class="flex flex-col justify-center space-y-4">
+        <div class="space-y-2">
+          <h1 class="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
+            Honorable minister Nkeiruka Onyejeocha 
+          </h1>
+          <p class="max-w-[600px] text-primary-foreground md:text-xl font-body">
+            She is a Nigerian politician and a ranking member of the federal house of representatives .
+          </p>
+        </section>
+        <section class="w-full py-12 md:py-24 lg:py-32 bg-background">
+          <div class="container px-4 md:px-6">
+            <div class="grid gap-6">
+              <div class="space-y-4">
+                <h2 class="text-3xl font-bold tracking-tighter md:text-4xl/tight font-display">Biography</h2>
+                <p class="max-w-[800px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed font-body">
+                  She was born on November 23rd, 1969 in Isuochi, Umunneochi L.G.A, Abia State, Nigeria.
+        
+
+                </p>
+                <p class="max-w-[800px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed font-body">
+                  She was born into the family of late Eze Bob Ogbonna. She had a primary school education
+                  at Isuochi central primary school and Ovim girls school, Isuochi. She graduated from the
+                  university of Nigeria, Nsukka with a diploma of social works/community development
+                  in 1998 and a bachelor of arts degree in 1993.
+                </p>
+              </div>
+              <div class="space-y-4">
+                <h2 class="text-3xl font-bold tracking-tighter md:text-4xl/tight font-display">Political Career</h2>
+                <p class="max-w-[800px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed font-body">
+                  Onyejeocha worked in the protocol office of the governor of Osun state during her one-year 
+                  stay at the NYSC in 1993.
+                  She is now the present minister of labour in Abuja, Nigeria
+                </p>
+              
+              </div>
+              <div class="space-y-4">
+                <h2 class="text-3xl font-bold tracking-tighter md:text-4xl/tight font-display">Key Achievements</h2>
+                <p class="max-w-[800px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed font-body">
+                  Her achievements are as follows:
+                  1. Legislative reforms
+                  2. Women empowerment
+                  3. Constituency development
+                  4. Awards and recognition
+                  5. Leadership roles
+                  6. Community development
+                  7. Advocacy
+                </p>
+                <p class="max-w-[800px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed font-body">
+                 These acheivements showcase her commitment to the public service, leadership and community development.
+                </p>
+              </div>
+        <div class="container grid gap-6 px-4 md:grid-cols-2 md:gap-12 md:px-6">
+          <img src="host.JPG" width="800" height="600" alt="Hero Image"
+            class="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full" />
+          <div class="flex flex-col justify-center space-y-4">
+            <div class="space-y-2">
+              <h1 class="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
+                Senator Ireti Kingibe
+              </h1>
+              <p class="max-w-[600px] text-primary-foreground md:text-xl font-body">
+                A prominent Nigerian politician and former First Lady of Nigeria.
+              </p>
+            </section>
+            <section class="w-full py-12 md:py-24 lg:py-32 bg-background">
+              <div class="container px-4 md:px-6">
+                <div class="grid gap-6">
+                  <div class="space-y-4">
+                    <h2 class="text-3xl font-bold tracking-tighter md:text-4xl/tight font-display">Biography</h2>
+                    <p class="max-w-[800px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed font-body">
+                      Ireti Kingibe is a prominent Nigerian politician and former First Lady of Nigeria. She has been involved
+                      in Nigerian politics for over two decades, serving in various capacities at the state and federal
+                      levels.
+                    </p>
+                    <p class="max-w-[800px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed font-body">
+                      Ireti Kingibe was born in Lagos, Nigeria, and studied at the University of Ibadan, where she obtained a
+                      degree in Political Science. She later went on to earn a master's degree in Public Administration from
+                      the University of Lagos.
+                    </p>
+                  </div>
+                  <div class="space-y-4">
+                    <h2 class="text-3xl font-bold tracking-tighter md:text-4xl/tight font-display">Political Career</h2>
+                    <p class="max-w-[800px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed font-body">
+                      Ireti Kingibe's political career began in the early 1990s when she was appointed as a commissioner in
+                      the Lagos State Government. She later served as the First Lady of Nigeria from 1999 to 2007, during the
+                      presidency of her husband, Baba Gana Kingibe.
+                    </p>
+                    <p class="max-w-[800px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed font-body">
+                      In 2011, Ireti Kingibe was elected to the Nigerian Senate, representing the Federal Capital Territory
+                      (FCT) Abuja. She has since been re-elected to the Senate and has served on several committees, including
+                      the Senate Committee on Foreign Affairs and the Senate Committee on Women Affairs.
+                    </p>
+                  </div>
+                  <div class="space-y-4">
+                    <h2 class="text-3xl font-bold tracking-tighter md:text-4xl/tight font-display">Key Achievements</h2>
+                    <p class="max-w-[800px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed font-body">
+                      During her time as First Lady, Ireti Kingibe was known for her advocacy work on issues such as women's
+                      empowerment, child welfare, and HIV/AIDS awareness. She also founded the Ireti Kingibe Foundation, which
+                      focuses on supporting women and children in Nigeria.
+                    </p>
+                    <p class="max-w-[800px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed font-body">
+                      As a Senator, Ireti Kingibe has been a vocal advocate for gender equality and has worked to pass
+                      legislation that promotes the rights of women and children in Nigeria. She has also been recognized for
+                      her efforts to improve the lives of her constituents in the FCT.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        </div>
+      </section>
+    </main>
+    <footer class="w-full bg-muted py-6 md:py-12" style="background-color: black; color: white;">
+      <div class="container flex flex-col items-center justify-between gap-4 px-4 md:flex-row md:px-6">
+        <div class="flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
+            <path d="m8 3 4 8 5-5 5 15H2L8 3z"></path>
+          </svg>
+          <span class="font-bold">Plan B Summer Bootcamp</span>
+        </div>
+        <div class="flex gap-4">
+          <a class=" text-lg font-medium hover:underline" href="https://www.instagram.com/planbsummer/" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a class="text-lg font-medium hover:underline" href="#">
+            <i class="fab fa-x-twitter"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
